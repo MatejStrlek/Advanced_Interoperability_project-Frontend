@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.layout.AnchorPane?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="hr.algebra.advanced_interoperability_projectfrontend.MenuController"
@@ -15,10 +11,10 @@
         <menus>
             <Menu mnemonicParsing="false" text="HTTP">
                 <items>
-                    <MenuItem mnemonicParsing="false" onAction="#openPostScreen" text="POST" />
-                    <MenuItem mnemonicParsing="false" onAction="#openGetByIdScreen" text="Get mobile by ID" />
-                    <MenuItem mnemonicParsing="false" onAction="#openGetAllReviewsByCodeScreen" text="Get all reviews by code" />
-                    <MenuItem mnemonicParsing="false" onAction="#openPostReviewScreen" text="POST review" />
+                    <MenuItem mnemonicParsing="false" onAction="#openGetMobileByIdScreen" text="Get mobile by ID" />
+                    <MenuItem mnemonicParsing="false" onAction="#openUpdateMobileScreen" text="Update mobile" />
+                    <MenuItem mnemonicParsing="false" onAction="#openCreateMobileScreen" text="Create mobile" />
+                    <MenuItem mnemonicParsing="false" onAction="#openDeleteMobileScreen" text="Delete mobile" />
                 </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Edit">

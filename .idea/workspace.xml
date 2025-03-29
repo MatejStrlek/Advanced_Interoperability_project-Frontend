@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="added read all mobiles action">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/util/AlertUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/getMobileById.fxml" afterDir="false" />
+    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="added read mobile by id and error handling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/CreateMobileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/DeleteMobileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/UpdateMobileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/createMobile.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/deleteMobile.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/updateMobile.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" afterDir="false" />
     </list>
@@ -97,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743262778592</updated>
       <workItem from="1743262779685" duration="4051000" />
-      <workItem from="1743266849271" duration="1138000" />
+      <workItem from="1743266849271" duration="4008000" />
     </task>
     <task id="LOCAL-00001" summary="init frontend project">
       <option name="closed" value="true" />
@@ -115,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743265984546</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added read mobile by id and error handling">
+      <option name="closed" value="true" />
+      <created>1743268187173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743268187173</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,22 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init frontend project" />
     <MESSAGE value="added read all mobiles action" />
-    <option name="LAST_COMMIT_MESSAGE" value="added read all mobiles action" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added read mobile by id and error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="added read mobile by id and error handling" />
   </component>
 </project>
