@@ -1,10 +1,13 @@
 package hr.algebra.advanced_interoperability_projectfrontend;
 
+import hr.algebra.advanced_interoperability_projectfrontend.config.RestTemplateFactory;
 import hr.algebra.advanced_interoperability_projectfrontend.model.Mobile;
+import hr.algebra.advanced_interoperability_projectfrontend.util.AlertUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -38,34 +41,29 @@ public class HelloController implements Initializable {
 
     @FXML
     protected void onHelloButtonClick() {
-        List<HttpMessageConverter<?>> messageConverters = new ArrayList<>();
-        MappingJackson2HttpMessageConverter converter =
-                new MappingJackson2HttpMessageConverter();
-        List<MediaType> mediaTypes = new ArrayList<>();
-        mediaTypes.add(MediaType.ALL);
-        converter.setSupportedMediaTypes(mediaTypes);
-        messageConverters.add(converter);
-
-        RestTemplate restTemplate = new RestTemplate();
-        restTemplate.setMessageConverters(messageConverters);
+        RestTemplate restTemplate = RestTemplateFactory.createRestTemplate();
 
         String restEndpointUrl = "http://localhost:8081/rest/mobiles";
 
+        try {
+            ResponseEntity<Mobile[]> mobileArrayResponse =
+                    restTemplate.getForEntity(restEndpointUrl, Mobile[].class);
 
-        ResponseEntity<Mobile[]> mobileArrayResponse =
-                restTemplate.getForEntity(restEndpointUrl, Mobile[].class);
+            for (Mobile mobile : mobileArrayResponse.getBody()) {
+                System.out.println("Mobile name: " + mobile.getName());
+                System.out.println("Mobile brand: " + mobile.getBrand());
+            }
 
-        for (Mobile mobile : mobileArrayResponse.getBody()) {
-            System.out.println("Mobile name: " + mobile.getName());
-            System.out.println("Mobile brand: " + mobile.getBrand());
+            ObservableList<Mobile> mobiles = FXCollections.observableArrayList();
+            Mobile[] mobileArray = mobileArrayResponse.getBody();
+            List<Mobile> mobileList = new ArrayList<>(List.of(mobileArray));
+            mobiles.addAll(mobileList);
+
+            mobileTable.setItems(mobiles);
         }
-
-        ObservableList<Mobile> mobiles = FXCollections.observableArrayList();
-        Mobile[] mobileArray = mobileArrayResponse.getBody();
-        List<Mobile> mobileList = new ArrayList<>(List.of(mobileArray));
-        mobiles.addAll(mobileList);
-
-        mobileTable.setItems(mobiles);
+        catch (Exception e) {
+            AlertUtil.showAlert("Error", e.getMessage(), Alert.AlertType.ERROR);
+        }
     }
 
     @Override

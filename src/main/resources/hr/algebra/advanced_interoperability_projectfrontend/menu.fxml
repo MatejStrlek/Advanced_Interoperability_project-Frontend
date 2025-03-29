@@ -16,7 +16,7 @@
             <Menu mnemonicParsing="false" text="HTTP">
                 <items>
                     <MenuItem mnemonicParsing="false" onAction="#openPostScreen" text="POST" />
-                    <MenuItem mnemonicParsing="false" onAction="#openGetByIdScreen" text="Get by ID" />
+                    <MenuItem mnemonicParsing="false" onAction="#openGetByIdScreen" text="Get mobile by ID" />
                     <MenuItem mnemonicParsing="false" onAction="#openGetAllReviewsByCodeScreen" text="Get all reviews by code" />
                     <MenuItem mnemonicParsing="false" onAction="#openPostReviewScreen" text="POST review" />
                 </items>

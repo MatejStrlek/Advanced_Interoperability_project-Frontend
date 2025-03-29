@@ -16,7 +16,7 @@ public class MenuController {
     }
 
     public void openGetByIdScreen() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("getByIdHardware.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("getMobileById.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         HelloApplication.getCentralStage().setTitle("GET BY ID");
         HelloApplication.getCentralStage().setScene(scene);

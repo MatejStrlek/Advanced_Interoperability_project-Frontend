@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="init frontend project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/model/Mobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" afterDir="false" />
+    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="added read all mobiles action">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/util/AlertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/getMobileById.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +39,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2uzsXSb5g7Pl6B9q69DoizTztdv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,8 +53,10 @@
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Algebra/8. semestar/AISI/Advanced_Interoperability_project-Frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,7 +96,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743262778592</updated>
-      <workItem from="1743262779685" duration="3100000" />
+      <workItem from="1743262779685" duration="4051000" />
+      <workItem from="1743266849271" duration="1138000" />
     </task>
     <task id="LOCAL-00001" summary="init frontend project">
       <option name="closed" value="true" />
@@ -103,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743262980944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added read all mobiles action">
+      <option name="closed" value="true" />
+      <created>1743265984546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743265984546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,25 +123,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init frontend project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init frontend project" />
+    <MESSAGE value="added read all mobiles action" />
+    <option name="LAST_COMMIT_MESSAGE" value="added read all mobiles action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java</url>
-          <line>54</line>
+          <line>46</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java</url>
-          <line>57</line>
+          <line>49</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/HelloController.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
