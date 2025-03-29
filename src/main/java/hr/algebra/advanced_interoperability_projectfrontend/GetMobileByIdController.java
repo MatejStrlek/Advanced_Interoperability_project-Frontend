@@ -32,7 +32,6 @@ public class GetMobileByIdController {
     @FXML
     private TextField ratingField;
 
-
     public void getMobileById() {
         if (idField.getText().isEmpty() || !idField.getText().matches("\\d+")) {
             AlertUtil.showAlert("Error", "Please enter mobile ID", Alert.AlertType.WARNING);
@@ -40,7 +39,6 @@ public class GetMobileByIdController {
         }
 
         long mobileId = Long.parseLong(idField.getText());
-
         RestTemplate restTemplate = RestTemplateFactory.createRestTemplate();
 
         String restEndpointUrl = "http://localhost:8081/rest/mobiles/" + mobileId;
