@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="added read mobile by id and error handling">
+    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="minor refactors">
       <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/CreateMobileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/DeleteMobileController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/UpdateMobileController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/createMobile.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/deleteMobile.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/updateMobile.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/GetMobileByIdController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +47,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Application.hr.algebra.advanced_interoperability_projectfrontend.HelloApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Algebra/8. semestar/AISI/Advanced_Interoperability_project-Frontend",
+    "last_opened_file_path": "D:/Algebra/8. semestar/AISI/Advanced_Interoperability_project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,12 +66,12 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="hr.algebra.advanced_interoperability_projectfrontend.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hr.algebra.advanced_interoperability_projectfrontend.HelloApplication" />
       <module name="Advanced_Interoperability_project-Frontend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hr.algebra.advanced_interoperability_projectfrontend.*" />
+          <option name="PATTERN" value="hr.algebra.advanced_interoperability_projectfrontend.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,7 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.hr.algebra.advanced_interoperability_projectfrontend.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1743262778592</updated>
       <workItem from="1743262779685" duration="4051000" />
-      <workItem from="1743266849271" duration="4008000" />
+      <workItem from="1743266849271" duration="4861000" />
+      <workItem from="1743348335169" duration="3084000" />
     </task>
     <task id="LOCAL-00001" summary="init frontend project">
       <option name="closed" value="true" />
@@ -123,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743268187173</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added delete mobile by id and error handling">
+      <option name="closed" value="true" />
+      <created>1743275203131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743275203131</updated>
+    </task>
+    <task id="LOCAL-00005" summary="minor refactors">
+      <option name="closed" value="true" />
+      <created>1743275245700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743275245700</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +147,8 @@
     <MESSAGE value="init frontend project" />
     <MESSAGE value="added read all mobiles action" />
     <MESSAGE value="added read mobile by id and error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="added read mobile by id and error handling" />
+    <MESSAGE value="added delete mobile by id and error handling" />
+    <MESSAGE value="minor refactors" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor refactors" />
   </component>
 </project>
