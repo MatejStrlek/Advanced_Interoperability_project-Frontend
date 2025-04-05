@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="minor refactors">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/CreateMobileController.java" afterDir="false" />
+    <list default="true" id="9cf637a2-d04f-405d-aedb-9bab825754d3" name="Changes" comment="create mobile screen done">
       <change afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/UpdateMobileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/createMobile.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/hr/algebra/advanced_interoperability_projectfrontend/updateMobile.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/algebra/advanced_interoperability_projectfrontend/config/RestTemplateFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Algebra/8. semestar/AISI/Advanced_Interoperability_project",
+    "last_opened_file_path": "D:/Algebra/8. semestar/AISI/Advanced_Interoperability_project-Frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,6 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,7 +96,9 @@
       <updated>1743262778592</updated>
       <workItem from="1743262779685" duration="4051000" />
       <workItem from="1743266849271" duration="4861000" />
-      <workItem from="1743348335169" duration="3084000" />
+      <workItem from="1743348335169" duration="3992000" />
+      <workItem from="1743525598956" duration="25000" />
+      <workItem from="1743854861875" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary="init frontend project">
       <option name="closed" value="true" />
@@ -137,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743275245700</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create mobile screen done">
+      <option name="closed" value="true" />
+      <created>1743351698648</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743351698648</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +160,7 @@
     <MESSAGE value="added read mobile by id and error handling" />
     <MESSAGE value="added delete mobile by id and error handling" />
     <MESSAGE value="minor refactors" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor refactors" />
+    <MESSAGE value="create mobile screen done" />
+    <option name="LAST_COMMIT_MESSAGE" value="create mobile screen done" />
   </component>
 </project>
